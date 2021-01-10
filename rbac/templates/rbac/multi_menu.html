@@ -1,0 +1,28 @@
+<!-- 页面左侧的二级可折叠菜单 -->
+<div class="multi-menu">
+    <div class="item">
+        <!-- 一级菜单 -->
+        {% for id, item in menu_dict.items %}
+            <div class="panel panel-primary">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse"
+                           href="#tag_list{{ id }}">
+                            <span class="icon-wrap">
+                                <i class="fa {{ item.icon }}"></i>
+                            </span> {{ item.title }}
+                        </a>
+                    </h4>
+                </div>
+                <div id="tag_list{{ id }}" class="panel-collapse collapse in" role="tabpanel">
+                    <!-- 二级菜单 -->
+                    {% for per in item.children %}
+                        <div class="body">
+                            <a href="{{ per.url }}" class="text-info {{ per.class }}">{{ per.title }}</a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

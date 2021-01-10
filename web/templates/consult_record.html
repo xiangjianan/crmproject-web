@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+
+<!-- 当前页面：私有客户跟进记录管理 -->
+{% block content %}
+    <div class="content-container">
+
+        {% if add_btn %}
+            <div class="clearfix">
+                <div class="pull-right">
+                    {{ add_btn|safe }}
+                </div>
+            </div>
+        {% endif %}
+        {% for row in body_list %}
+            <div class="panel panel-default" style="position: relative;top: 10px">
+                <div class="panel-body" style="position: relative;">
+                    <div style="width: 90%">
+                        {{ row.0 }}
+                    </div>
+                    <div style="margin-top: 5px;">
+                        <div style="display: inline-block;margin-right: 15px;">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            {{ row.1 }}
+                        </div>
+                        <div style="display: inline-block;">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            {{ row.2 }}
+                        </div>
+                    </div>
+                    <div style="position:absolute;top:0;bottom:0;right:0;width:100px;display: flex;justify-content:center;align-items:center;">
+                        <div style="display: inline-block;"> {{ row.3 }} </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        <nav>
+            <ul class="pagination">
+                {{ pager.page_html|safe }}
+            </ul>
+        </nav>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+
+<!-- 当前页面：公有客户跟进记录 -->
+{% block content %}
+    <div class="content-container">
+        {% for row in record_list %}
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    {{ row.note }}
+                    <div style="margin: 5px;">
+                        <div style="display: inline-block;margin-right: 15px;">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            {{ row.consultant.name }}
+                        </div>
+                        <div style="display: inline-block;">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            {{ row.date }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

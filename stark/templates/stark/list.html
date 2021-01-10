@@ -1,0 +1,119 @@
+{% extends 'layout.html' %}
+{% load rbac %}
+
+<!-- 当前页面的css样式 -->
+{% block css %}
+    <style>
+        tr.active {
+            border-left: 3px solid #fdc00f;
+        }
+    </style>
+{% endblock %}
+
+<!-- 当前页面：通用的数据信息展示页面 -->
+{% block content %}
+    <div class="content-container">
+        <!-- 组合搜索 -->
+        {% if search_group_row_list %}
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-filter" aria-hidden="true"></i> 快速筛选
+                </div>
+                <div class="panel-body">
+                    <div class="search-group">
+                        {% for row in search_group_row_list %}
+                            <div class="row">
+                                {% for obj in row %}
+                                    {{ obj|safe }}
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+        <!-- 添加按钮 -->
+        {% if add_btn %}
+            <div class="pull-right" style="margin-left: 5px">
+                {{ add_btn|safe }}
+            </div>
+        {% endif %}
+
+        <!-- 关键字搜索 -->
+        {% if search_list %}
+            <div class="pull-right">
+                <form method="GET" class="form-inline">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="q" value="{{ search_value }}" placeholder="关键字搜索">
+                        <button class="btn btn-info" type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        {% endif %}
+
+        <!-- 主体 -->
+        <form method="post">
+            {% csrf_token %}
+            <!-- 批量操作 -->
+            {% if action_dict %}
+                <div class="pull-left">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <select class="form-control" name="action">
+                                <option value="">请选择操作</option>
+                                {% for func_name, func_text in action_dict.items %}
+                                    <option value="{{ func_name }}">{{ func_text }}</option>
+                                {% endfor %}
+                            </select>
+                            <input class="btn btn-info" type="submit" value="执行"/>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+
+
+            <!-- 表格 -->
+            <table class="table table-bordered table-hover" style="position: relative; top: 10px">
+                <thead>
+                <tr>
+                    {% for item in header_list %}
+                        {% if forloop.counter == 1 %}
+                            <th><strong class="font-16">{{ item }}</strong></th>
+                        {% else %}
+                            <th style="text-align: center"><strong class="font-16">{{ item }}</strong></th>
+                        {% endif %}
+
+                    {% endfor %}
+                </tr>
+                </thead>
+                <tbody>
+                {% for row in body_list %}
+                    <tr style="text-align: center">
+                        {% for ele in row %}
+                            {% if forloop.counter == 1 %}
+                                <td style="font-weight: normal;text-align: left">{{ ele }}</td>
+                            {% else %}
+                                <td style="font-weight: normal">{{ ele }}</td>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </form>
+
+        <!-- 分页 -->
+        <div>
+            <nav class="center-block text-center">
+                <ul class="pagination">
+                    {{ pager.page_html|safe }}
+                </ul>
+            </nav>
+        </div>
+    </div>
+{% endblock %}
+

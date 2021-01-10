@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+<!-- 当前页面：角色列表页面 -->
+{% block content %}
+    <div class="content-container">
+        <div class="btn-group pull-right">
+            <a class="btn btn-success" href="{% url 'rbac:role_add' %}">
+                <i class="fa fa-plus" aria-hidden="true"></i> 添加角色
+            </a>
+        </div>
+        <table class="table table-bordered table-hover" style="position: relative;top: 10px">
+            <thead>
+            <tr>
+                <th style="text-align: left">ID</th>
+                <th style="text-align: center">名称</th>
+                <th style="text-align: right">选项</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for row in roles %}
+                <tr>
+                    <td style="text-align: left">{{ row.id }}</td>
+                    <td style="text-align: center">{{ row.title }}</td>
+                    <td style="text-align: right">
+                        <div class="pull-right">
+                            <a class="text-primary" style="margin-right: 10px;" href="{% url 'rbac:role_edit' pk=row.id %}">
+                                编辑
+                            </a>
+                            <a class="text-danger" href="{% url 'rbac:role_del' pk=row.id %}">
+                                删除
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

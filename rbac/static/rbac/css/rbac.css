@@ -1,0 +1,144 @@
+.no-radius {
+    border-radius: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.pg-body > .left-menu {
+    background-color: #EAEDF1;
+    position: absolute;
+    left: 1px;
+    top: 48px;
+    bottom: 0;
+    width: 220px;
+    border: 1px solid #EAEDF1;
+    overflow: auto;
+}
+
+.pg-body > .right-body {
+    position: absolute;
+    left: 225px;
+    right: 0;
+    top: 48px;
+    bottom: 0;
+    overflow: scroll;
+    border: 1px solid #ddd;
+    border-top: 0;
+    font-size: 13px;
+    min-width: 755px;
+}
+
+/* 页面左侧的二级菜单 */
+.multi-menu .item {
+    background-color: white;
+}
+
+.multi-menu .item .body a {
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.multi-menu .item .body a:hover {
+    border-left: 2px solid #2F72AB;
+    background-color: #f0f0f0;
+    transition: 0.3s;
+}
+
+.multi-menu .item .body a.active {
+    border-left: 2px solid #2F72AB;
+    background-color: rgba(45, 119, 165, 0.5);
+    color: white;
+    transition: 0.3s;
+}
+
+.btn, .btn:hover {
+    transition: 0.3s;
+}
+
+.navbar-right {
+    float: right !important;
+    margin-right: -15px;
+}
+
+.content-container {
+    padding: 15px;
+}
+
+.delete-css {
+    margin-top: 100px;
+}
+
+.delete-css .delete-css-left {
+    margin-left: 50px;
+}
+
+.delete-css .delete-css-right {
+    margin-right: 50px;
+}
+
+table {
+    font-size: 12px;
+}
+
+.user-area ul {
+    padding-left: 0px;
+}
+
+.user-area span {
+    cursor: pointer;
+    padding: 2px 0;
+    height: 26px;
+    line-height: 26px;
+}
+
+.user-area span a {
+    /*display: block;*/
+}
+
+.user-area span.active {
+    font-weight: bold;
+    color: red;
+}
+
+.user-area span.active a {
+    color: white;
+    background: rgb(45,115,169);
+    border-radius: 4px;
+}
+
+.role-area tr td a {
+    display: block;
+}
+
+.role-area tr.active {
+    background-color: #f1f7fd;
+    border-left: 3px solid #fdc00f;
+}
+
+.panel-body {
+    font-size: 12px;
+}
+
+
+/* 清除默认样式 */
+a, a:hover {
+    text-decoration: none !important;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/* 特效 */
+tr, tr:hover, a, a:hover {
+    transition: 0.3s;
+}
+
+
+
