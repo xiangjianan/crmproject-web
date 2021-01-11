@@ -12,7 +12,7 @@ def login(request):
     :return:
     """
     if request.method == 'GET':
-        return render(request, 'login.html')
+        return render(request, 'login-action.html')
 
     user = request.POST.get('user')
     pwd = request.POST.get('pwd')
