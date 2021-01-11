@@ -129,7 +129,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_ROOT = '/root/crm_static/'
+STATIC_ROOT = '/root/static/crm_static/'
 STATIC_URL = '/static/'
 
 # ######################################## rbac组件相关配置 ##########################################
