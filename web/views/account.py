@@ -18,7 +18,7 @@ def login(request):
     pwd = request.POST.get('pwd')
     current_user = models.UserInfo.objects.filter(name=user, password=gen_md5(pwd)).first()
     if not current_user:
-        return render(request, 'login.html', {'msg': '用户名或密码错误'})
+        return render(request, 'login-action.html', {'msg': '用户名或密码错误'})
 
     # session初始化：用户信息
     request.session['user_info'] = {'id': current_user.id, 'nickname': current_user.nickname}
