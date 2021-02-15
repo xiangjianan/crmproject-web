@@ -40,7 +40,7 @@ class ClassListHandler(PermissionHandler, StarkHandler):
         """
         if is_header:
             return '班级'
-        return "%s %s期" % (obj.course.name, obj.semester,)
+        return "%s（%s期）" % (obj.course.name, obj.semester,)
 
     def display_course_record(self, obj=None, is_header=None, *args, **kwargs):
         """

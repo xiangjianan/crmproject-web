@@ -144,7 +144,7 @@ MENU_SESSION_KEY = "permission_menu_key"
 PERMISSION_VALID_URL_LIST = [
     '/login/',
     '/admin/.*',
-    '',
+    # '/',
 ]
 
 # 权限白名单（登录后）

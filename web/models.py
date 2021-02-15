@@ -61,7 +61,7 @@ class ClassList(models.Model):
     所属学校｜所属课程｜期数｜学费｜开课日期｜结业日期｜班主任｜教师｜说明
     """
     school = models.ForeignKey(verbose_name='校区', to='School', on_delete=models.CASCADE)
-    course = models.ForeignKey(verbose_name='课程名称', to='Course', on_delete=models.CASCADE)
+    course = models.ForeignKey(verbose_name='课程', to='Course', on_delete=models.CASCADE)
     semester = models.PositiveIntegerField(verbose_name="班级(期)")
     price = models.PositiveIntegerField(verbose_name="学费")
     start_date = models.DateField(verbose_name="开班日期")
@@ -164,7 +164,7 @@ class Customer(models.Model):
     last_consult_date = models.DateField(verbose_name="最后跟进日期", auto_now_add=True)
 
     def __str__(self):
-        return f"姓名：{self.name}，联系方式：{self.qq}"
+        return self.name
 
 
 class ConsultRecord(models.Model):
@@ -216,7 +216,7 @@ class Student(models.Model):
     qq = models.CharField(verbose_name='QQ号', max_length=32)
     mobile = models.CharField(verbose_name='手机号', max_length=32)
     emergency_contract = models.CharField(verbose_name='紧急联系人电话', max_length=32)
-    class_list = models.ManyToManyField(verbose_name="已报班级", to='ClassList', blank=True)
+    class_list = models.ManyToManyField(verbose_name="班级", to='ClassList', blank=True)
     student_status_choices = [
         (1, "申请中"),
         (2, "在读"),

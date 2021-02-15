@@ -1,6 +1,6 @@
 import re
 from django.utils.deprecation import MiddlewareMixin
-from django.shortcuts import HttpResponse
+from django.shortcuts import redirect
 from django.conf import settings
 
 
@@ -30,7 +30,8 @@ class RbacMiddleware(MiddlewareMixin):
         # 检查该用户是否登录
         permission_dict = request.session.get(settings.PERMISSION_SESSION_KEY)
         if not permission_dict:
-            return HttpResponse('未获取到用户权限信息，请登录！')
+            # return HttpResponse('未获取到用户权限信息，请登录！')
+            return redirect('/login/')
 
         # 需要登录，但无需权限校验
         for url in settings.NO_PERMISSION_URL_LIST:
@@ -63,4 +64,5 @@ class RbacMiddleware(MiddlewareMixin):
                 request.current_selected_permission = url_current
                 return None
         else:
-            return HttpResponse('无权访问')
+            # return HttpResponse('无权访问')
+            return redirect('/index/')

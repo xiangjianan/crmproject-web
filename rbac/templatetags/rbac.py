@@ -45,6 +45,7 @@ def breadcrumb(request):
     :param request:
     :return:
     """
+    print('request.current_breadcrumb_list', request.current_breadcrumb_list)
     return {
         'breadcrumb_list': request.current_breadcrumb_list
     }

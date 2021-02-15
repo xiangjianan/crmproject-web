@@ -61,7 +61,7 @@ def get_m2m_text(title, field):
             return title
         queryset = getattr(obj, field).all()
         text_list = [str(row) for row in queryset]
-        return ','.join(text_list)
+        return '、'.join(text_list)
 
     return inner
 
