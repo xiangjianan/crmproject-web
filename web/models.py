@@ -94,22 +94,17 @@ class Customer(models.Model):
     gender = models.SmallIntegerField(verbose_name='性别', choices=gender_choices)
 
     source_choices = [
-        (1, "qq群"),
+        (1, "微信公众号"),
         (2, "内部转介绍"),
         (3, "官方网站"),
         (4, "百度推广"),
-        (5, "360推广"),
-        (6, "搜狗推广"),
+        (5, "抖音推广"),
+        (6, "微博推广"),
         (7, "腾讯课堂"),
-        (8, "广点通"),
+        (8, "网易公开课"),
         (9, "高校宣讲"),
         (10, "渠道代理"),
-        (11, "51cto"),
-        (12, "智汇推"),
-        (13, "网盟"),
-        (14, "DSP"),
-        (15, "SEO"),
-        (16, "其它"),
+        (11, "其它"),
     ]
     source = models.SmallIntegerField('客户来源', choices=source_choices, default=1)
 
