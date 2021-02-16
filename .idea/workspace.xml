@@ -25,12 +25,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/rbac/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/rbac/static" />
       <recent name="$PROJECT_DIR$/rbac/static/plugins" />
       <recent name="$PROJECT_DIR$/rbac/static/js" />
@@ -76,6 +77,7 @@
       <workItem from="1610470400137" duration="162000" />
       <workItem from="1610513183523" duration="272000" />
       <workItem from="1613428465764" duration="5929000" />
+      <workItem from="1613446219801" duration="301000" />
     </task>
     <servers />
   </component>
