@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0a092c9-0e59-4cba-a434-068a920d6bef" name="Default Changelist" comment="" />
+    <list default="true" id="b0a092c9-0e59-4cba-a434-068a920d6bef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/static/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/static/css/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/static/rbac/css/rbac.css" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/static/rbac/css/rbac.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/templates/rbac/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/rbac/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/templates/rbac/multi_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/rbac/multi_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stark/templates/stark/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/stark/templates/stark/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/attendance.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/attendance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/course_record.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/course_record.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,17 +36,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rbac/static/font" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/rbac/static/font" />
       <recent name="$PROJECT_DIR$/rbac/static" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/rbac/static/plugins" />
       <recent name="$PROJECT_DIR$/rbac/static/js" />
-      <recent name="$PROJECT_DIR$/web/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rbac/static/plugins" />
     </key>
   </component>
   <component name="RunManager">
@@ -45,6 +59,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="crmProject.settings" />
       </envs>
       <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -78,6 +93,7 @@
       <workItem from="1610513183523" duration="272000" />
       <workItem from="1613428465764" duration="5929000" />
       <workItem from="1613446219801" duration="301000" />
+      <workItem from="1614257336190" duration="1324000" />
     </task>
     <servers />
   </component>

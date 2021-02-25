@@ -3,7 +3,7 @@
     <div class="item">
         <!-- 一级菜单 -->
         {% for id, item in menu_dict.items %}
-            <div class="panel panel-primary">
+            <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingTwo">
                     <h4 class="panel-title">
                         <a role="button" data-toggle="collapse"
@@ -18,7 +18,7 @@
                     <!-- 二级菜单 -->
                     {% for per in item.children %}
                         <div class="body">
-                            <a href="{{ per.url }}" class="text-info {{ per.class }}">{{ per.title }}</a>
+                            <a href="{{ per.url }}" class="text-default {{ per.class }}">{{ per.title }}</a>
                         </div>
                     {% endfor %}
                 </div>

@@ -79,7 +79,7 @@ class CourseRecordHandler(PermissionHandler, StarkHandler):
         tpl = """
             <div class="pull-right">
                 <a class="text-primary" style="margin-right: 10px;" href="%s">
-                    编辑
+                    <span class=""iconfont>&#xe606;</span>
                 </a>
                 <a class="text-danger" href="%s">
                     删除

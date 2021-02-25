@@ -51,9 +51,9 @@
 }
 
 .multi-menu .item .body a.active {
-    border-left: 2px solid #2F72AB;
-    background-color: rgba(45, 119, 165, 0.5);
-    color: white;
+    border-left: 2px solid #ECECED;
+    background-color: #dedede;
+    color: #337ab7;
     transition: 0.3s;
 }
 
@@ -140,5 +140,7 @@ tr, tr:hover, a, a:hover {
     transition: 0.3s;
 }
 
-
+.text-default{
+    color: #333333;
+}
 

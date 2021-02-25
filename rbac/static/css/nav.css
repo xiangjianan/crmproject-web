@@ -1,7 +1,7 @@
 .nav {
     min-width: 980px;
     height: 48px;
-    background-color: #2F72AB;
+    background-color: #dedede;
     color: #ffffff;
     line-height: 48px;
     overflow: visible;
@@ -17,7 +17,7 @@
 }
 
 .nav .logo-area > a {
-    color: #ffffff;
+    color: #333333;
     text-decoration: none;
     display: inline-block;
 }
@@ -39,12 +39,12 @@
     padding: 0 15px;
     cursor: pointer;
     position: relative;
-    color: white;
+    color: #333333;
     text-decoration: none;
 }
 
 .nav .left-menu .menu-item:hover {
-    background-color: #337ab7;
+    background-color: #ECECED;
 
 }
 
@@ -82,23 +82,24 @@
 .nav .right-menu .user-menu {
     padding: 0 8px;
     cursor: pointer;
-    color: white;
+    color: #333333;
     text-decoration: none;
 }
 
 .nav .right-menu .user-menu:hover {
-    background-color: #337ab7;
+    background-color: #ECECED;
 
 }
 
 .nav .right-menu .user-info {
     padding: 0 30px 0 10px;
     height: 48px;
+    color: #333333;
     position: relative;
 }
 
 .nav .right-menu .user-info:hover .avatar {
-    background-color: #337ab7;
+    background-color: #ECECED;
 }
 
 .nav .right-menu .user-info .avatar {
