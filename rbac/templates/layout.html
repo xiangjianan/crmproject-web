@@ -7,7 +7,8 @@
 <head>
     <meta charset="UTF-8">
     <title>CRM系统（demo）</title>
-    <link rel="shortcut icon" href="{% static 'imgs/crm-logo.png' %} ">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'favicon.ico' %}">
     <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.css' %} "/>
     <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.css' %} "/>
     <link rel="stylesheet" href="{% static 'stark/plugins/datetimepicker/css/bootstrap-datetimepicker.css' %} "/>
@@ -76,7 +77,7 @@
 
         <!-- 路径导航 -->
         <div>
-           {% breadcrumb request %} 
+            {% breadcrumb request %}
         </div>
 
         <!-- 信息表格 -->
@@ -102,6 +103,12 @@
         autoclose: true,
         pickerPosition: "bottom-left"
     });
+    console.log(`
+博客园：https://www.cnblogs.com/xiangjianan/
+
+微信：inMyLife2021
+
+`);
 </script>
 
 <!-- 预留的js脚本 -->
