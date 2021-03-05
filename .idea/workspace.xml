@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b0a092c9-0e59-4cba-a434-068a920d6bef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/static/js/canva_moving_effect.js" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/static/js/canva_moving_effect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/login-action.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/login-action.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +93,7 @@
       <workItem from="1614556677647" duration="1159000" />
       <workItem from="1614558980757" duration="5000" />
       <workItem from="1614559004576" duration="23000" />
+      <workItem from="1614975012947" duration="1431000" />
     </task>
     <servers />
   </component>

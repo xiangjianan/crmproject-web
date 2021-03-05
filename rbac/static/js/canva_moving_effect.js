@@ -234,6 +234,10 @@
 	}
 })(jQuery);
 console.log(`
-博客园：https://www.cnblogs.com/xiangjianan/
+Email :\tXJN9872@163.com
+
+WeChat:\tinMyLife2021
+
+Page  :\twww.helloxjn.com
 
 `);
