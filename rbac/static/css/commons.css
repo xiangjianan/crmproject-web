@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #E4EBF5;
 }
 img {
     border: 0;
@@ -47,4 +48,20 @@ img {
 }
 .img-circle {
     border-radius: 50%;
+}
+.panel{
+    background-color: #E0E8F1 !important;
+}
+.breadcrumb,
+.panel-default>.panel-heading{
+    background-color: #E6EdF7!important;
+}
+.jumbotron{
+    background-color: #edf1f3!important;
+}
+.nav{
+    background-color: #daE2ea!important;
+}
+.form-control{
+    background-color: #E4EBF5!important;
 }

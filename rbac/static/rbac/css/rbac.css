@@ -7,7 +7,7 @@
 }
 
 .pg-body > .left-menu {
-    background-color: #EAEDF1;
+    background-color: #E4EBF5;
     position: absolute;
     left: 1px;
     top: 48px;
@@ -32,7 +32,7 @@
 
 /* 页面左侧的二级菜单 */
 .multi-menu .item {
-    background-color: white;
+    background-color: #E4EBF5;
 }
 
 .multi-menu .item .body a {
@@ -52,7 +52,7 @@
 
 .multi-menu .item .body a.active {
     border-left: 2px solid #ECECED;
-    background-color: #dedede;
+    background-color: #f0f0f0;
     color: #337ab7;
     transition: 0.3s;
 }
