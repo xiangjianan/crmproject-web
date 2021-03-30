@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/static/css/commons.css" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/static/css/commons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/static/rbac/css/rbac.css" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/static/rbac/css/rbac.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +95,9 @@
       <workItem from="1616071750710" duration="18000" />
       <workItem from="1616344633681" duration="152000" />
       <workItem from="1616351466306" duration="955000" />
+      <workItem from="1616948326217" duration="633000" />
+      <workItem from="1616949145313" duration="617000" />
+      <workItem from="1617077250343" duration="204000" />
     </task>
     <servers />
   </component>

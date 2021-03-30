@@ -65,3 +65,6 @@ img {
 .form-control{
     background-color: #E4EBF5!important;
 }
+.pagination>li>a, .pagination>li>span, .btn-default{
+    background-color: #f0f0f0;
+}
