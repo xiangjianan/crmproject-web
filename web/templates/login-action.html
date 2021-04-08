@@ -13,19 +13,10 @@
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
     <link rel="apple-touch-icon" href="{% static 'favicon.ico' %}">
     <meta name="keywords" content=""/>
-    <script>
-        addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
-
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    </script>
     <!-- Meta tag Keywords -->
     <!-- css files -->
     {#	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />#}
-    <link rel="stylesheet" href="{% static 'plugins/style.css' %} "/>
+    {#    <link rel="stylesheet" href="{% static 'plugins/style.css' %} "/>#}
     <!-- Style-CSS -->
     {#	<link rel="stylesheet" href="css/fontawesome-all.css">#}
     <link rel="stylesheet" href="{% static 'plugins/fontawesome-all.css' %} "/>
@@ -34,46 +25,94 @@
     <!-- web-fonts -->
     {#	<link href="http://maxcdn.bootstrapcdn.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">#}
     {#	<link href="http://maxcdn.bootstrapcdn.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">#}
-{#    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.css' %} "/>#}
+    {#    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.css' %} "/>#}
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- //web-fonts -->
+    <style>
+        body {
+            background-color: #E4EBF5;
+        }
+
+        .form-style-agile input[type="text"],
+        .form-style-agile input[type="password"] {
+            border: none;
+            box-sizing: border-box;
+            color: #333333;
+            font-size: 14px;
+            padding: 20px;
+            height: 45px;
+            line-height: 45px;
+            width: 96%;
+            border-radius: 0.8em;
+            background: none;
+            outline: none;
+            box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem white;
+            margin: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            height: 45px;
+            width: 96%;
+            background: none;
+            border-radius: 0.8em;
+            outline: none;
+            border: none;
+            box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem white;
+            margin: 30px 10px;
+        }
+        input[type="submit"]:active {
+            outline: none;
+            box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem white;
+        }
+        .form-style-agile input::-webkit-input-placeholder {
+            color: #a3a3a3;
+            font-size: 14px;
+        }
+
+        .form-style-agile input::-moz-placeholder {
+            color: #a3a3a3;
+            font-size: 14px;
+        }
+
+        .form-style-agile input::-ms-input-placeholder {
+            color: #a3a3a3;
+            font-size: 14px;
+        }
+        input textarea {
+            color: #bcbcbc;
+            padding: 20px 25px !important;
+            height: 110px !important;
+        }
+    </style>
 </head>
 
 <body>
 <!-- bg effect -->
-<div id="bg">
-    <canvas></canvas>
-    <canvas></canvas>
-    <canvas></canvas>
-</div>
 <!-- //bg effect -->
 <!-- title -->
-<h1 style="margin: 66px; color: white">CRM客户关系管理系统(demo)</h1>
-<!-- //title -->
-<!-- content -->
-<div class="sub-main-w3">
-    <form action="#" method="post">
-        {% csrf_token %}
-        <h3 style="color: #aaa;">测试账号&nbsp;(&nbsp;<i class="fas fa-user"></i>&nbsp;:&nbsp;test &nbsp;
-            <i class="fas fa-unlock-alt"></i>&nbsp;:&nbsp;123&nbsp;)
-        </h3>
-        <div class="form-style-agile">
-            <label>
-                <i class="fas fa-user"></i>
-                管理员
-            </label>
-            <input placeholder="请输入用户名" name="user" type="text" required="">
-        </div>
-        <div class="form-style-agile">
-            <label>
-                <i class="fas fa-unlock-alt"></i>
-                密码
-            </label>
-            <input placeholder="请输入密码" name="pwd" type="password" required="">
-        </div>
-        <!-- //checkbox -->
-        <input type="submit" value="登录">
-    </form>
+<h1 style="margin: 166px; color: #777777;text-align: center"></h1>
+<div class="col-md-4 col-md-offset-4">
+    <!-- content -->
+    <div class="sub-main-w3 ">
+        <form action="#" method="post">
+            {% csrf_token %}
+            <h3 style="color: #aaa;text-align: center;margin-bottom: 30px">测试账号&nbsp;(&nbsp;<i class="fas fa-user"></i>&nbsp;:&nbsp;test
+                &nbsp;
+                <i class="fas fa-unlock-alt"></i>&nbsp;:&nbsp;123&nbsp;)
+            </h3>
+            <div class="form-style-agile">
+                <input placeholder="用户名" name="user" type="text" required="">
+            </div>
+            <div class="form-style-agile">
+                <input placeholder="密码" name="pwd" type="password" required="">
+            </div>
+            <!-- //checkbox -->
+            <div class="form-style-agile">
+                <input type="submit" value="登录">
+            </div>
+        </form>
+    </div>
 </div>
 <!-- //content -->
 
@@ -85,7 +124,7 @@
 
 <!-- effect js -->
 {#	<script src="js/canva_moving_effect.js"></script>#}
-<script src="{% static 'js/canva_moving_effect.js' %} "></script>
+{#<script src="{% static 'js/canva_moving_effect.js' %} "></script>#}
 <!-- //effect js -->
 
 </body>
