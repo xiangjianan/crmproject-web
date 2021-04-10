@@ -68,3 +68,6 @@ img {
 .pagination>li>a, .pagination>li>span, .btn-default{
     background-color: #f0f0f0;
 }
+.btn-primary{
+    background-color: #337ab7!important;
+}
