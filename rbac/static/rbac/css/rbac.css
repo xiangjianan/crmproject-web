@@ -7,7 +7,7 @@
 }
 
 .pg-body > .left-menu {
-    background-color: #E4EBF5;
+    background-color: #E4EBF8;
     position: absolute;
     left: 1px;
     top: 48px;
@@ -32,7 +32,7 @@
 
 /* 页面左侧的二级菜单 */
 .multi-menu .item {
-    background-color: #E4EBF5;
+    background-color: #E4EBF8;
 }
 
 .multi-menu .item .body a {
@@ -45,14 +45,14 @@
 }
 
 .multi-menu .item .body a:hover {
-    border-left: 2px solid #2F72AB;
-    background-color: #f0f0f0;
+    border-left: 2px solid rgba(0,0,0,0);
+    background-color: rgba(255,255,255,0.5);
     transition: 0.3s;
 }
 
 .multi-menu .item .body a.active {
-    border-left: 2px solid #ECECED;
-    background-color: #f0f0f0;
+    border-left: 2px solid #2F72AB;
+    background-color: rgba(255,255,255,0.5);
     color: #337ab7;
     transition: 0.3s;
 }

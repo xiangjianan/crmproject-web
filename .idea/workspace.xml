@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a092c9-0e59-4cba-a434-068a920d6bef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rbac/static/plugins/fontawesome-all.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/static/css/commons.css" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/static/css/commons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stark/static/stark/plugins/datetimepicker/js/bootstrap-datetimepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/stark/static/stark/plugins/datetimepicker/js/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/static/plugins/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/static/plugins/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/static/rbac/css/rbac.css" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/static/rbac/css/rbac.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/login-action.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/login-action.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

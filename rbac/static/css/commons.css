@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: #E4EBF5;
+    background-color: #E4EBF8;
 }
 img {
     border: 0;
@@ -52,18 +52,20 @@ img {
 .panel{
     background-color: #E0E8F1 !important;
 }
-.breadcrumb,
-.panel-default>.panel-heading{
+.breadcrumb{
     background-color: #E6EdF7!important;
 }
+.panel-default>.panel-heading{
+    background-color: rgba(0,0,0,0.02)!important;
+}
 .jumbotron{
-    background-color: #edf1f3!important;
+    background-color: rgba(0,0,0,0.03)!important;
 }
 .nav{
-    background-color: #daE2ea!important;
+    background-color: rgba(0,0,0,0.05)!important;
 }
 .form-control{
-    background-color: #E4EBF5!important;
+    background-color: #E4EBF8!important;
 }
 .pagination>li>a, .pagination>li>span, .btn-default{
     background-color: #f0f0f0;
